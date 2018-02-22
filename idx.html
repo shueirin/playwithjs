@@ -1,0 +1,99 @@
+<html>
+<head>
+	<title>Lah</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" />
+	<style>
+		.hidden {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">Something</h1>
+				<p>Etiam felis purus, vehicula et rhoncus pretium, venenatis vel odio. Ut magna leo, elementum quis maximus nec, efficitur sed augue. Morbi ac nisl sed ex luctus interdum in vel lectus. Duis congue a velit sed fermentum. Cras molestie semper leo in cursus. Aliquam faucibus arcu vitae lectus auctor gravida. Aenean ornare vel nibh condimentum luctus.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<form>
+				  <div class="form-group">
+					<label for="exampleFormControlSelect1">Pilihan</label>
+					<select name="v1" class="form-control" id="q1">
+					  <option value="1">1</option>
+					  <option value="tes">2</option>
+					  <option value="3">3</option>
+					  <option value="4">4</option>
+					  <option value="5">5</option>
+					</select>
+				  </div>
+				  
+				  <div class="form-check">
+					  <label class="form-check-label">
+						<input class="form-check-input" type="radio" name="v2" id="exampleRadios1" value="10" checked>
+						tes
+					  </label>
+					</div>
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input class="form-check-input" type="radio" name="v2" id="exampleRadios2" value="100">
+						100
+					  </label>
+					</div>
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input class="form-check-input" type="radio" name="v2" id="exampleRadios3" value="100">
+						1000
+					  </label>
+					</div>
+					
+				  
+  <button type="submit" id="kirim" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+					<div id="hore" class="alert alert-success text-center" role="alert">
+					 GUD JOP!
+					</div>
+					<div id="haduh" class="alert alert-danger text-center" role="alert">
+					  MEH!
+					</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+var hore = document.getElementById("hore");
+var haduh = document.getElementById("haduh");
+var kirim = document.getElementById("kirim");
+
+
+haduh.style.display = "none";
+
+document.onreadystatechange = function(){
+	if(document.readyState === "complete"){
+		mulai();
+	}
+}
+
+function mulai(){
+	hore.style.display = "none";
+	kirim.addEventListener("click", munculin());
+}
+function munculin(){
+	hore.style.display = "block";
+}
+
+
+
+
+
+</script>
+
+</html>
+

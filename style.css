@@ -1,0 +1,18 @@
+body, h1, h2, h3, p  {
+    background: #f8f8f8;
+    width: 100%;
+    color: black;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    text-align: center;
+}
+
+.table td, .table th {
+    border: 1px solid #ccc;
+    padding: 4px 6px;
+}
+.table td:nth-child(odd) {
+    text-align: left;
+}
+.table td:nth-child(even) {
+    text-align: right;
+}
